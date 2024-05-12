@@ -32,6 +32,8 @@
 		D82860B32BF0A37000D38EFB /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82860B22BF0A37000D38EFB /* LabelFactory.swift */; };
 		D82860B52BF0BFCF00D38EFB /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82860B42BF0BFCF00D38EFB /* UIView+Ext.swift */; };
 		D82860B72BF0D08F00D38EFB /* AmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82860B62BF0D08F00D38EFB /* AmountView.swift */; };
+		D82860B92BF1360600D38EFB /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82860B82BF1360600D38EFB /* HeaderView.swift */; };
+		D82860BC2BF13FE600D38EFB /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82860BB2BF13FE600D38EFB /* Tip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		D82860B22BF0A37000D38EFB /* LabelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
 		D82860B42BF0BFCF00D38EFB /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		D82860B62BF0D08F00D38EFB /* AmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountView.swift; sourceTree = "<group>"; };
+		D82860B82BF1360600D38EFB /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		D82860BB2BF13FE600D38EFB /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +182,7 @@
 				D82860A02BEE2F0A00D38EFB /* TipInputView.swift */,
 				D82860A22BEE3F9000D38EFB /* SplitInputView.swift */,
 				D82860B62BF0D08F00D38EFB /* AmountView.swift */,
+				D82860B82BF1360600D38EFB /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 		D82860A82BEE4F3400D38EFB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D82860BB2BF13FE600D38EFB /* Tip.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -397,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D82860B72BF0D08F00D38EFB /* AmountView.swift in Sources */,
+				D82860BC2BF13FE600D38EFB /* Tip.swift in Sources */,
 				D828605C2BEE169F00D38EFB /* CalculatorVC.swift in Sources */,
 				D82860992BEE2D7500D38EFB /* LogoView.swift in Sources */,
 				D82860AB2BEE4FC200D38EFB /* ThemeColor.swift in Sources */,
@@ -406,6 +413,7 @@
 				D828605A2BEE169F00D38EFB /* SceneDelegate.swift in Sources */,
 				D82860AD2BEE4FD100D38EFB /* ThemeFont.swift in Sources */,
 				D828609D2BEE2EB900D38EFB /* BillInputView.swift in Sources */,
+				D82860B92BF1360600D38EFB /* HeaderView.swift in Sources */,
 				D82860B52BF0BFCF00D38EFB /* UIView+Ext.swift in Sources */,
 				D82860B32BF0A37000D38EFB /* LabelFactory.swift in Sources */,
 				D82860A32BEE3F9000D38EFB /* SplitInputView.swift in Sources */,
