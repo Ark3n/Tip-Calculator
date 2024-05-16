@@ -5,4 +5,10 @@
 //  Created by Arken Sarsenov on 16.05.2024.
 //
 
-import Foundation
+import UIKit
+
+extension String {
+    var doubleValue: Double? {
+        Double(self)
+    }
+}
