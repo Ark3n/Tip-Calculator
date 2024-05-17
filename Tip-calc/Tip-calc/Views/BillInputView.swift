@@ -70,6 +70,11 @@ final class BillInputView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func reset() {
+        textField.text = nil
+        billSubject.send(0)
+    }
+    
     private func layout() {
         [headerView, textFieldContainerView].forEach(addSubview(_:))
         

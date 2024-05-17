@@ -39,6 +39,9 @@
 		D8E3E09E2BF5D59900887D20 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E3E09D2BF5D59900887D20 /* String+Ext.swift */; };
 		D8E3E0A02BF5EFF600887D20 /* UIResponder+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E3E09F2BF5EFF600887D20 /* UIResponder+Ext.swift */; };
 		D8E3E0A22BF60C5700887D20 /* Int+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E3E0A12BF60C5700887D20 /* Int+Ext.swift */; };
+		D8E3E0A42BF622FC00887D20 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E3E0A32BF622FC00887D20 /* Double+Ext.swift */; };
+		D8E3E0A72BF72F9800887D20 /* click.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D8E3E0A62BF72F9800887D20 /* click.m4a */; };
+		D8E3E0AA2BF72FE000887D20 /* AudioPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E3E0A92BF72FE000887D20 /* AudioPlayerService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,9 @@
 		D8E3E09D2BF5D59900887D20 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		D8E3E09F2BF5EFF600887D20 /* UIResponder+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Ext.swift"; sourceTree = "<group>"; };
 		D8E3E0A12BF60C5700887D20 /* Int+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Ext.swift"; sourceTree = "<group>"; };
+		D8E3E0A32BF622FC00887D20 /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
+		D8E3E0A62BF72F9800887D20 /* click.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = click.m4a; sourceTree = "<group>"; };
+		D8E3E0A92BF72FE000887D20 /* AudioPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +152,8 @@
 		D82860562BEE169F00D38EFB /* Tip-calc */ = {
 			isa = PBXGroup;
 			children = (
+				D8E3E0A82BF72FC300887D20 /* Service */,
+				D8E3E0A52BF72F8400887D20 /* Resource */,
 				D8E3E0982BF2094E00887D20 /* New Group */,
 				D82860B12BF0A36300D38EFB /* Factory */,
 				D82860AE2BEE506600D38EFB /* Extentions */,
@@ -259,6 +267,7 @@
 				D8E3E09D2BF5D59900887D20 /* String+Ext.swift */,
 				D8E3E09F2BF5EFF600887D20 /* UIResponder+Ext.swift */,
 				D8E3E0A12BF60C5700887D20 /* Int+Ext.swift */,
+				D8E3E0A32BF622FC00887D20 /* Double+Ext.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -276,6 +285,22 @@
 			children = (
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		D8E3E0A52BF72F8400887D20 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D8E3E0A62BF72F9800887D20 /* click.m4a */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D8E3E0A82BF72FC300887D20 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D8E3E0A92BF72FE000887D20 /* AudioPlayerService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,6 +424,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8E3E0A72BF72F9800887D20 /* click.m4a in Resources */,
 				D82860612BEE16A000D38EFB /* Assets.xcassets in Resources */,
 				D82860642BEE16A000D38EFB /* Base in Resources */,
 			);
@@ -428,7 +454,9 @@
 				D8E3E0A02BF5EFF600887D20 /* UIResponder+Ext.swift in Sources */,
 				D8E3E09C2BF20B8300887D20 /* ResultModel.swift in Sources */,
 				D82860B72BF0D08F00D38EFB /* AmountView.swift in Sources */,
+				D8E3E0AA2BF72FE000887D20 /* AudioPlayerService.swift in Sources */,
 				D82860BC2BF13FE600D38EFB /* TipModel.swift in Sources */,
+				D8E3E0A42BF622FC00887D20 /* Double+Ext.swift in Sources */,
 				D828605C2BEE169F00D38EFB /* CalculatorVC.swift in Sources */,
 				D82860992BEE2D7500D38EFB /* LogoView.swift in Sources */,
 				D82860AB2BEE4FC200D38EFB /* ThemeColor.swift in Sources */,

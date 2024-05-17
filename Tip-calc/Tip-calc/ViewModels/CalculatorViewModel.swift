@@ -7,20 +7,30 @@
 
 import Foundation
 import Combine
+import CombineCocoa
 
 final class CalculatorViewModel {
     
     private var cancellables = Set<AnyCancellable>()
     
+    private let audioPlayerService: AudioPlayerService
+    
+    init(audioPlayerService: AudioPlayerService = DefaultAudioPlayer()) {
+        self.audioPlayerService = audioPlayerService
+    }
+    
+    
     struct Input {
         let billPublisher: AnyPublisher<Double, Never>
         let tipPublisher: AnyPublisher<TipModel, Never>
         let splitPublisher: AnyPublisher<Int, Never>
+        let logoViewTapPublisher: AnyPublisher<Void, Never>
         
     }
     
     struct Output {
         let updateViewPublisher: AnyPublisher<ResultModel, Never>
+        let resetCalculatorPublisher: AnyPublisher<Void, Never>
     }
     
     func transform(input: Input) -> Output {
@@ -37,7 +47,14 @@ final class CalculatorViewModel {
                     totalTip: totalTip)
                 return Just(result)
             }.eraseToAnyPublisher()
-        return Output(updateViewPublisher: updateViewPublisher)
+        let resultCalculatorPublisher = input.logoViewTapPublisher.handleEvents(receiveOutput: { [unowned self] _ in
+            audioPlayerService.playSound()
+        }).flatMap { _ in
+            return Just(())
+        }.eraseToAnyPublisher()
+        
+        return Output(updateViewPublisher: updateViewPublisher,
+                      resetCalculatorPublisher: resultCalculatorPublisher)
     }
     
     private func getTipAmount(bill: Double, tip: TipModel) -> Double {
